@@ -1,17 +1,52 @@
 // Place your settings in this file to overwrite the default settings
 {
-    //"editor": {
-        //"fontFamily": "Helvetica Neue", // For Ulysses type look
-        //"fontSize": 14
-    //},
-    "window.zoomLevel": 1,
-    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "boundary",
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": true,
     "editor.cursorBlinking": "solid",
     "editor.lineNumbers": "interval",
+    "files.hotExit": "onExitAndWindowClose",
+    "csharp.suppressDotnetRestoreNotification": true,
 
-    "editor.codeLens": true,
-    "sync.gist": "5b6edbb92d220e8e2001dd3d43f979f5",
-    "sync.lastUpload": "2017-12-15T03:52:49.640Z",
+    "http.proxy": "http://proxy.mtl.ubisoft.com:3128",
+
+    // "files.exclude":{
+    //     "**/.git": true,
+    //     "**/.svn": true,
+    //     "**/.hg": true,
+    //     "**/.DS_Store": true,
+    //     "**/tmp/**": true
+    // },
+    "[markdown]": {
+        "editor.wordWrap": "on"
+    },
+    "files.associations": {
+        "*.DotSettings": "xml",
+        "*.sharpmake": "csharp",
+        "*.editorconfig": "ini",
+        ".p4ignore": "shellscript"
+    },
+    "editor.fontFamily": "'Fira Code', 'iA Writer Duospace', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
+    "workbench.iconTheme": "vscode-icons",
+
+    "perforce.addOnFileCreate": false,
+    "perforce.deleteOnFileDelete": false,
+    "perforce.editOnFileSave": true,
+    "perforce.editOnFileModified": true,
+    "perforce.activationMode": "always",
+    "perforce.countBadge": "all-but-shelved",
+
+    "window.zoomLevel": 0,
+    "extensions.ignoreRecommendations": false,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "terminal.integrated.shellArgs.windows": ["/K", "C:\\Users\\abrien\\Apps\\Cmder\\vscode.bat"],
+    "workbench.sideBar.location": "left",
+    "vsicons.projectDetection.disableDetect": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "sync.gist": "c321c6f1755e80a0fcd0aa6e8acba784",
+    "sync.lastUpload": "2017-12-15T18:10:03.647Z",
     "sync.autoDownload": false,
     "sync.autoUpload": false,
     "sync.lastDownload": "",
