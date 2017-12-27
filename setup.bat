@@ -1,5 +1,11 @@
 :: Sets up symbolic links in the correct locations.
 
+:: bash
+del c:\users\abrien\.bashrc
+mklink c:\users\abrien\.bashrc c:\users\abrien\.dotfiles\bash\.bashrc
+del c:\users\abrien\.bash_profile
+mklink c:\users\abrien\.bash_profile c:\users\abrien\.dotfiles\bash\.bash_profile
+
 :: git
 del C:\Users\abrien\.gitconfig
 mklink C:\Users\abrien\.gitconfig C:\Users\abrien\.dotfiles\git\.gitconfig
