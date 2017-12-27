@@ -1,0 +1,14 @@
+{
+  "segments": [
+    "newline",
+    "cwd",
+    "git",
+    "newline",
+    "root"
+  ],
+  "mode": "patched",
+  "cwd": {
+    "mode": "plain"
+  },
+  "theme": "default"
+}

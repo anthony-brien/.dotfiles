@@ -18,10 +18,10 @@ module.exports = {
     cursorColor: 'rgba(248,28,229,0.8)',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
-    cursorShape: 'BLOCK',
+    cursorShape: 'BEAM',
 
     // set to true for blinking cursor
-    cursorBlink: false,
+    cursorBlink: true,
 
     // color of the text
     foregroundColor: '#DDD',
@@ -134,7 +134,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    //`hyperline`,
+    //`hyperline`, fails to load on MacOS
     `hypertheme`,
     //`hyper-solarized-dark`,
     `hyper-snazzy`,

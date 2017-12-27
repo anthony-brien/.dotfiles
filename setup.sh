@@ -15,6 +15,8 @@ rm ~/.bash_profile
 ln ~/.dotfiles/bash/.bash_profile ~/.bash_profile
 rm ~/.bashrc
 ln ~/.dotfiles/bash/.bashrc ~/.bashrc
+rm ~/.powerline-shell.json
+ln ~/.dotfiles/bash/.powerline-shell.json ~/.powerline-shell.json
 
 # Git
 rm ~/.gitconfig
