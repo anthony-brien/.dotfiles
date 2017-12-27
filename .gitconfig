@@ -1,0 +1,16 @@
+[user]
+	email = anthony.brien@ubisoft.com
+	name = Anthony Brien
+[core]
+	editor = code --wait
+	
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[alias]
+	lga = log --graph --oneline --all --decorate
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = "code --wait $MERGED"
