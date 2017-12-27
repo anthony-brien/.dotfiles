@@ -1,0 +1,24 @@
+// Place your settings in this file to overwrite the default settings
+{
+    //"editor": {
+        //"fontFamily": "Helvetica Neue", // For Ulysses type look
+        //"fontSize": 14
+    //},
+    "window.zoomLevel": 1,
+    "editor.wordWrap": "on",
+    "editor.cursorBlinking": "solid",
+    "editor.lineNumbers": "interval",
+
+    "editor.codeLens": true,
+    "sync.gist": "5b6edbb92d220e8e2001dd3d43f979f5",
+    "sync.lastUpload": "2017-12-15T03:52:49.640Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false
+}
