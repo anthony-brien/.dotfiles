@@ -1,35 +1,39 @@
 :: Sets up symbolic links in the correct locations.
 
 :: bash
-del c:\users\abrien\.bashrc
-mklink c:\users\abrien\.bashrc c:\users\abrien\.dotfiles\bash\.bashrc
-del c:\users\abrien\.bash_profile
-mklink c:\users\abrien\.bash_profile c:\users\abrien\.dotfiles\bash\.bash_profile
+del %HOME%\.bashrc
+mklink %HOME%\.bashrc %HOME%\.dotfiles\bash\.bashrc
+del %HOME%\.bash_profile
+mklink %HOME%\.bash_profile %HOME%\.dotfiles\bash\.bash_profile
 
 :: git
-del C:\Users\abrien\.gitconfig
-mklink C:\Users\abrien\.gitconfig C:\Users\abrien\.dotfiles\git\.gitconfig
-del C:\Users\abrien\.gitignore
-mklink C:\Users\abrien\.gitconfig C:\Users\abrien\.dotfiles\git\.gitignore
+del %HOME%\.gitconfig
+mklink %HOME%\.gitconfig %HOME%\.dotfiles\git\.gitconfig
+del %HOME%\.gitignore
+mklink %HOME%\.gitconfig %HOME%\.dotfiles\git\.gitignore
 
 :: vscode
-del C:\Users\abrien\AppData\Roaming\Code\User\settings.json
-mklink C:\Users\abrien\AppData\Roaming\Code\User\settings.json C:\Users\abrien\.dotfiles\vscode\settings.json
+del %HOME%\AppData\Roaming\Code\User\settings.json
+mklink %HOME%\AppData\Roaming\Code\User\settings.json %HOME%\.dotfiles\vscode\settings.json
 
 :: cmder
-del C:\Users\abrien\Apps\Cmder\config\cmder.lua
-mklink C:\Users\abrien\Apps\Cmder\config\cmder.lua C:\Users\abrien\.dotfiles\cmder\config\cmder.lua
-del C:\Users\abrien\Apps\Cmder\config\ConEmu.xml
-mklink C:\Users\abrien\Apps\Cmder\config\ConEmu.xml C:\Users\abrien\.dotfiles\cmder\config\ConEmu.xml
-del C:\Users\abrien\Apps\Cmder\config\powerline_prompt.lua
-mklink C:\Users\abrien\Apps\Cmder\config\powerline_prompt.lua C:\Users\abrien\.dotfiles\cmder\config\powerline_prompt.lua
-del C:\Users\abrien\Apps\Cmder\config\settings
-mklink C:\Users\abrien\Apps\Cmder\config\settings C:\Users\abrien\.dotfiles\cmder\config\settings
-del C:\Users\abrien\Apps\Cmder\config\user-aliases.cmd
-mklink C:\Users\abrien\Apps\Cmder\config\user-aliases.cmd C:\Users\abrien\.dotfiles\cmder\config\user-aliases.cmd
-del C:\Users\abrien\Apps\Cmder\config\user-ConEmu.xml
-mklink C:\Users\abrien\Apps\Cmder\config\user-ConEmu.xml C:\Users\abrien\.dotfiles\cmder\config\user-ConEmu.xml
-del C:\Users\abrien\Apps\Cmder\config\user-profile.cmd
-mklink C:\Users\abrien\Apps\Cmder\config\user-profile.cmd C:\Users\abrien\.dotfiles\cmder\config\user-profile.cmd
-del C:\Users\abrien\Apps\Cmder\config\user-startup.cmd
-mklink C:\Users\abrien\Apps\Cmder\config\user-startup.cmd C:\Users\abrien\.dotfiles\cmder\config\user-startup.cmd
+del %HOME%\Apps\Cmder\config\cmder.lua
+mklink %HOME%\Apps\Cmder\config\cmder.lua %HOME%\.dotfiles\cmder\config\cmder.lua
+del %HOME%\Apps\Cmder\config\ConEmu.xml
+mklink %HOME%\Apps\Cmder\config\ConEmu.xml %HOME%\.dotfiles\cmder\config\ConEmu.xml
+del %HOME%\Apps\Cmder\config\powerline_prompt.lua
+mklink %HOME%\Apps\Cmder\config\powerline_prompt.lua %HOME%\.dotfiles\cmder\config\powerline_prompt.lua
+del %HOME%\Apps\Cmder\config\settings
+mklink %HOME%\Apps\Cmder\config\settings %HOME%\.dotfiles\cmder\config\settings
+del %HOME%\Apps\Cmder\config\user-aliases.cmd
+mklink %HOME%\Apps\Cmder\config\user-aliases.cmd %HOME%\.dotfiles\cmder\config\user-aliases.cmd
+del %HOME%\Apps\Cmder\config\user-ConEmu.xml
+mklink %HOME%\Apps\Cmder\config\user-ConEmu.xml %HOME%\.dotfiles\cmder\config\user-ConEmu.xml
+del %HOME%\Apps\Cmder\config\user-profile.cmd
+mklink %HOME%\Apps\Cmder\config\user-profile.cmd %HOME%\.dotfiles\cmder\config\user-profile.cmd
+del %HOME%\Apps\Cmder\config\user-startup.cmd
+mklink %HOME%\Apps\Cmder\config\user-startup.cmd %HOME%\.dotfiles\cmder\config\user-startup.cmd
+
+:: hyper terminal
+del %HOME%\.hyper.js
+mklink %HOME%\.hyper.js %HOME%\.dotfiles\hyperterminal\.hyper.js
