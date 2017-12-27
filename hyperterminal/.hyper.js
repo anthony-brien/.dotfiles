@@ -102,11 +102,11 @@ module.exports = {
     //
     // Powershell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: 'C:\\WINDOWS\\System32\\cmd.exe',
+    shell: '',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used
-    shellArgs: ['--login /K C:\\Users\\abrien\\Apps\\Cmder\\vscode.bat'],
+    shellArgs: ['--login'],
 
     // for environment variables
     env: {},
