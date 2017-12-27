@@ -12,12 +12,12 @@ ln ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/set
 
 # bash
 rm ~/.bash_profile
-ln ~/.dotfiles/.bash_profile ~/.bash_profile
+ln ~/.dotfiles/bash/.bash_profile ~/.bash_profile
 rm ~/.bashrc
-ln ~/.dotfiles/.bashrc ~/.bashrc
+ln ~/.dotfiles/bash/.bashrc ~/.bashrc
 
 # Git
 rm ~/.gitconfig
-ln ~/.dotfiles/.gitconfig ~/.gitconfig
+ln ~/.dotfiles/git/.gitconfig ~/.gitconfig
 rm ~/.gitignore
-ln ~/.dotfiles/.gitignore ~/.gitignore
+ln ~/.dotfiles/git/.gitignore ~/.gitignore
