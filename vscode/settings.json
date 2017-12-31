@@ -42,6 +42,7 @@
     "extensions.ignoreRecommendations": false,
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "terminal.integrated.shellArgs.windows": ["/K", "C:\\Users\\abrien\\Apps\\Cmder\\vscode.bat"],
+    "terminal.integrated.shell.osx": "/bin/zsh",
     "workbench.sideBar.location": "left",
     "vsicons.projectDetection.disableDetect": true,
     "workbench.startupEditor": "newUntitledFile",

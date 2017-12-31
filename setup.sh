@@ -21,6 +21,8 @@ ln ~/.dotfiles/bash/.powerline-shell.json ~/.powerline-shell.json
 # zsh
 rm ~/.zshrc
 ln ~/.dotfiles/zsh/.zshrc ~/.zshrc
+rm ~/.oh-my-zsh
+ln ~/.dotfiles/zsh/.zshrc ~/.zshrc
 
 # Git
 rm ~/.gitconfig
