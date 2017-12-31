@@ -18,6 +18,10 @@ ln ~/.dotfiles/bash/.bashrc ~/.bashrc
 rm ~/.powerline-shell.json
 ln ~/.dotfiles/bash/.powerline-shell.json ~/.powerline-shell.json
 
+# zsh
+rm ~/.zshrc
+ln ~/.dotfiles/zsh/.zshrc ~/.zshrc
+
 # Git
 rm ~/.gitconfig
 ln ~/.dotfiles/git/.gitconfig ~/.gitconfig
