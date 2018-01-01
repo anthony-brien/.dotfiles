@@ -65,7 +65,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  git z colored-man-pages zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -98,3 +98,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias g='git'
+alias ls='ls -GFh'
+alias ll='ls -FGlAhp'
+alias grep='grep --color=auto'
+cd() { builtin cd "$@"; ls; } # Always list directory contents upon 'cd'
+alias edit='code' # opens any file in Visual Studio Code
+ql () { qlmanage -p "$*" >& /dev/null; }    # ql:           Opens any file in MacOS Quicklook Preview
+#   lr:  Full Recursive Directory Listing
+alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
+#   mans:   Search manpage given in agument '1' for term given in argument '2' (case insensitive)
+#           displays paginated result with colored search terms and two lines surrounding each hit.            Example: mans mplayer codec
+#   --------------------------------------------------------------------
+    mans () {
+        man $1 | grep -iC2 --color=always $2 | less
+    }
