@@ -77,7 +77,7 @@ POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git z colored-man-pages zsh-syntax-highlighting
+  git z colored-man-pages #zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
