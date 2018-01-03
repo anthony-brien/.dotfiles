@@ -14,6 +14,8 @@
 [core]
 	editor = code --wait
 	excludesfile = ~/.gitignore
+	# prevent warning about CRLF conversion when using zsh
+	safecrlf = false 
 [diff]
     tool = vscode
 [difftool "vscode"]
@@ -50,3 +52,9 @@
     insteadOf = gist:
 [url "https://ubisoft.gitlab.com/"]
 	insteadOf = gl:
+[http]
+	proxy = http://proxy-mtl.ubisoft.org:3128
+[https]
+	proxy = http://proxy-mtl.ubisoft.org:3128
+[url "https://"]
+	insteadOf = git://

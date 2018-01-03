@@ -2,15 +2,25 @@
 
 :: bash
 del %HOME%\.bashrc
+::dos2unix -n %HOME%\.dotfiles\bash\.bashrc %HOME%\.dotfiles\bash\.bashrc-unix 
 mklink %HOME%\.bashrc %HOME%\.dotfiles\bash\.bashrc
 del %HOME%\.bash_profile
+::dos2unix -n %HOME%\.dotfiles\bash\.bash_profile %HOME%\.dotfiles\bash\.bash_profile-unix 
 mklink %HOME%\.bash_profile %HOME%\.dotfiles\bash\.bash_profile
+
+::zsh
+del %HOME%\.zshrc
+mklink %HOME%\.zshrc %HOME%\.dotfiles\zsh\.zshrc
+
+::mintty
+del %HOME%\.minttyrc
+mklink %HOME%\.minttyrc %HOME%\.dotfiles\zsh\.minttyrc
 
 :: git
 del %HOME%\.gitconfig
 mklink %HOME%\.gitconfig %HOME%\.dotfiles\git\.gitconfig
 del %HOME%\.gitignore
-mklink %HOME%\.gitconfig %HOME%\.dotfiles\git\.gitignore
+mklink %HOME%\.gitignore %HOME%\.dotfiles\git\.gitignore
 
 :: vscode
 del %HOME%\AppData\Roaming\Code\User\settings.json

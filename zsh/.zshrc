@@ -1,8 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Anthony/.oh-my-zsh
+#export ZSH=/Users/Anthony/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
+
+# TODO Should be loading this from .minttyrc but doesnt seem to work from cmder
+export TERM=xterm-256color
+
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -11,8 +15,16 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
 #POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(newline dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="λ "
+POWERLEVEL9K_COLOR_SCHEME='light'
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
 
 
 # Set list of themes to load
@@ -99,7 +111,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias g='git'
-alias ls='ls -GFh'
+alias ls='ls -GFh --color'
 alias ll='ls -FGlAhp'
 alias grep='grep --color=auto'
 cd() { builtin cd "$@"; ls; } # Always list directory contents upon 'cd'
@@ -113,3 +125,6 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
     mans () {
         man $1 | grep -iC2 --color=always $2 | less
     }
+
+# Remove % symbol appearing after output missing trailing new line
+unsetopt PROMPT_SP
