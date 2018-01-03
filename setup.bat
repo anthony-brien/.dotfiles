@@ -43,6 +43,8 @@ del %HOME%\Apps\Cmder\config\user-profile.cmd
 mklink %HOME%\Apps\Cmder\config\user-profile.cmd %HOME%\.dotfiles\cmder\config\user-profile.cmd
 del %HOME%\Apps\Cmder\config\user-startup.cmd
 mklink %HOME%\Apps\Cmder\config\user-startup.cmd %HOME%\.dotfiles\cmder\config\user-startup.cmd
+del %HOME%\Apps\Cmder\vscode.bat
+mklink %HOME%\Apps\Cmder\vscode.bat %HOME%\.dotfiles\cmder\vscode.bat
 
 :: hyper terminal
 del %HOME%\.hyper.js

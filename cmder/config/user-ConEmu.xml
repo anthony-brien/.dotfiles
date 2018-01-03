@@ -540,10 +540,10 @@
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
 				</key>
-				<key name="&lt;Startup&gt;" modified="2018-01-02 23:37:19" build="171025">
+				<key name="&lt;Startup&gt;" modified="2018-01-03 11:03:15" build="171025">
 					<value name="GuiArgs" type="string" data=""/>
-					<value name="Cmd1" type="string" data="&gt;* -cur_console:d:C:\Users\abrien -cur_console:t:zsh -cur_console:C:C:\Users\abrien\.dotfiles\cmder\Kxmylo-Simple-Utilities-terminal.ico C:\CygWin64\bin\zsh.exe --login -i"/>
-					<value name="Cmd2" type="string" data="* -cur_console:d:C:\Users\abrien -cur_console:t:cmd -cur_console:C:C:\Users\abrien\Apps\Cmder\cmder.exe cmd /k &quot;%ConEmuDir%\..\init.bat&quot;"/>
+					<value name="Cmd1" type="string" data="&gt;* -cur_console:d:C:\Users\abrien\.dotfiles -cur_console:t:cmd -cur_console:C:C:\Users\abrien\Apps\Cmder\cmder.exe cmd /k &quot;%ConEmuDir%\..\init.bat&quot;"/>
+					<value name="Cmd2" type="string" data="* -cur_console:f -cur_console:d:C:\Users\abrien\.dotfiles -cur_console:t:zsh -cur_console:C:C:\Users\abrien\.dotfiles\cmder\Kxmylo-Simple-Utilities-terminal.ico C:\CygWin64\bin\zsh.exe --login -i"/>
 					<value name="Active" type="long" data="1"/>
 					<value name="Count" type="long" data="2"/>
 				</key>
