@@ -49,3 +49,9 @@ mklink %HOME%\Apps\Cmder\vscode.bat %HOME%\.dotfiles\cmder\vscode.bat
 :: hyper terminal
 del %HOME%\.hyper.js
 mklink %HOME%\.hyper.js %HOME%\.dotfiles\hyperterminal\.hyper.js
+
+::p4
+del %HOME%\p4enviro.txt
+mklink %HOME%\p4enviro.txt %HOME%\.dotfiles\p4\p4enviro.txt
+del %HOME%\p4aliases.txt
+mklink %HOME%\p4aliases.txt %HOME%\.dotfiles\p4\p4aliases.txt
