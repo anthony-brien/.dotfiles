@@ -111,7 +111,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias g='git'
-alias ls='ls -GFh --color'
+alias ls='ls -GFh'
 alias ll='ls -FGlAhp'
 alias grep='grep --color=auto'
 cd() { builtin cd "$@"; ls; } # Always list directory contents upon 'cd'
