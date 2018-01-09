@@ -24,7 +24,6 @@ SetupLink ~/.dotfiles/bash/.powerline-shell.json ~/.powerline-shell.json
 
 # zsh
 SetupLink ~/.dotfiles/zsh/.zshrc ~/.zshrc
-SetupLink ~/.dotfiles/zsh/.zshrc ~/.zshrc
 
 # Git
 SetupLink ~/.dotfiles/git/.gitconfig ~/.gitconfig
