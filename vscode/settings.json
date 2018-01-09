@@ -43,6 +43,8 @@
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "terminal.integrated.shellArgs.windows": ["/K", "C:\\Users\\abrien\\Apps\\Cmder\\vscode.bat"],
     "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontFamily": "'Fira Code'",
+    "terminal.integrated.fontSize": 12,
     "workbench.sideBar.location": "left",
     "vsicons.projectDetection.disableDetect": true,
     "workbench.startupEditor": "newUntitledFile",
@@ -56,5 +58,15 @@
     "sync.host": "",
     "sync.pathPrefix": "",
     "sync.quietSync": false,
-    "sync.askGistName": false
+    "sync.askGistName": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    }
 }
