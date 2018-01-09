@@ -1,0 +1,30 @@
+# Brewfile
+
+# Make sure we have all the taps we need before beginning.
+tap 'homebrew/boneyard'
+tap 'homebrew/dupes'
+tap 'homebrew/versions'
+tap 'homebrew/php'
+
+tap 'caskroom/cask'
+tap 'caskroom/versions'
+
+brew 'git'
+brew 'bash-completion'
+brew 'zsh'
+brew 'zsh-completions'
+
+# Casks
+cask_args appdir: '/Applications'
+
+cask 'alfred'
+cask 'dropbox'
+cask 'hyper'
+cask 'calibre'
+cask 'iterm2'
+cask 'sketch'
+cask 'slack'
+cask 'dr-unarchiver'
+cask 'transmission'
+cask 'visual-studio-code'
+cask 'vlc'
