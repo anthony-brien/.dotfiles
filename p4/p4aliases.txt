@@ -1,0 +1,5 @@
+blame = annotate -u
+shelved = changes –me –s shelved –c $(P4CLIENT)
+descr $(cl) $(desc) = change –o $(cl)> $(chg) &&
+          p4subst “$(LT)enter.*$(GT)” $(desc) < $(chg) > $(chg1) &&
+          change –i < $(chg1)

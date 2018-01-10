@@ -28,3 +28,5 @@ SetupLink ~/.dotfiles/zsh/.zshrc ~/.zshrc
 # Git
 SetupLink ~/.dotfiles/git/.gitconfig ~/.gitconfig
 SetupLink ~/.dotfiles/git/.gitignore ~/.gitignore
+
+source ./macos/set-defaults.sh
