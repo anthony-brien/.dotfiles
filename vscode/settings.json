@@ -71,5 +71,7 @@
         "suppressNoRepositoryWarning": false,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
-    }
+    },
+    "git.autofetch": true,
+    "git.confirmSync": false
 }
