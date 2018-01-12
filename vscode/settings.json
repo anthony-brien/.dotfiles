@@ -24,7 +24,8 @@
         "*.DotSettings": "xml",
         "*.sharpmake": "csharp",
         "*.editorconfig": "ini",
-        ".p4ignore": "shellscript"
+        ".p4ignore": "shellscript",
+        "*.vssettings": "xml"
     },
     "editor.fontFamily": "'Fira Code', 'iA Writer Duospace', Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
@@ -70,5 +71,7 @@
         "suppressNoRepositoryWarning": false,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
-    }
+    },
+    "git.autofetch": true,
+    "git.confirmSync": false
 }
