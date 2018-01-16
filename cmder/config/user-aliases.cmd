@@ -20,3 +20,8 @@ clear=cls
 history=cat %CMDER_ROOT%\config\.history
 unalias=alias /d $1
 ls=ls --show-control-chars --group -F --color $*  
+cdpl=f: $t cd f:\anvil-playground\$1
+cdmain=d: $t cd d:\main\$1
+vs2017="C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\devenv.exe" $*
+vs2015="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe" $*
+
