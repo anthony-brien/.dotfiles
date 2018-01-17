@@ -55,3 +55,9 @@ del %HOME%\p4enviro.txt
 mklink %HOME%\p4enviro.txt %HOME%\.dotfiles\p4\p4enviro.txt
 del %HOME%\p4aliases.txt
 mklink %HOME%\p4aliases.txt %HOME%\.dotfiles\p4\p4aliases.txt
+
+::powershell
+del %HOME%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+mklink %HOME%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 %HOME%\.dotfiles\powershell\Microsoft.PowerShell_profile.ps1
+del %HOME%\Documents\WindowsPowerShell\profile.ps1
+mklink %HOME%\Documents\WindowsPowerShell\profile.ps1 %HOME%\.dotfiles\powershell\profile.ps1
