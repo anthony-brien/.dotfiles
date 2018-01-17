@@ -126,5 +126,7 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
         man $1 | grep -iC2 --color=always $2 | less
     }
 
+alias c='cmd /c $*'
+
 # Remove % symbol appearing after output missing trailing new line
 unsetopt PROMPT_SP
