@@ -1,3 +1,1 @@
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-Theme paradox
+# Powershell settings for current user, but only for the Microsoft.Powershell shell
