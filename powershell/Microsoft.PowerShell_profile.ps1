@@ -1,3 +1,3 @@
-# $Shell = $Host.UI.RawUI
-# $shell.BackgroundColor = "Gray"
-# $shell.ForegroundColor = "Black"
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-Theme paradox
