@@ -29,4 +29,7 @@ SetupLink ~/.dotfiles/zsh/.zshrc ~/.zshrc
 SetupLink ~/.dotfiles/git/.gitconfig ~/.gitconfig
 SetupLink ~/.dotfiles/git/.gitignore ~/.gitignore
 
+# vim
+SetupLink ~/.dotfiles/vim/.vimrc ~/.vimrc
+
 source ./macos/set-defaults.sh
