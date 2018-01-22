@@ -4,6 +4,12 @@ Import-Module oh-my-posh
 Import-Module ZLocation
 Set-Theme paradox
 
+# Start SshAgent if not already
+# Need this if you are using github as your remote git repository
+if (! (ps | ? { $_.Name -eq 'ssh-agent'})) {
+    Start-SshAgent
+}
+
 If ($IsMacOS -eq 'True') 
 {
     # redefine the default oh-my-posh prompt as it causes issues on MacOS
