@@ -1,7 +1,8 @@
 # Powershell for current user and for all shells
 Import-Module posh-git
 Import-Module oh-my-posh
-Import-Module ZLocation
+Import-Module Jump.Location
+
 Set-Theme paradox
 
 # Start SshAgent if not already
