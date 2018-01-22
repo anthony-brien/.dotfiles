@@ -31,3 +31,6 @@ $ cd ~/.dotfiles
 $ chmod +x setup.sh
 $ ./setup.sh
 ```
+
+## Inspired from
+* Powershell scripts from https://github.com/jayharris/dotfiles-windows
