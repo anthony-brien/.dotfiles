@@ -47,6 +47,7 @@
     "terminal.integrated.fontFamily": "'Fira Code'",
     "terminal.integrated.fontSize": 12,
     "workbench.sideBar.location": "left",
+    "workbench.statusBar.feedback.visible": false,
     "vsicons.projectDetection.disableDetect": true,
     "workbench.startupEditor": "newUntitledFile",
     "sync.gist": "c321c6f1755e80a0fcd0aa6e8acba784",
@@ -74,5 +75,7 @@
     },
     "git.autofetch": true,
     "git.confirmSync": false,
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+
+    "window.title" : "${dirty}${rootName} - ${activeEditorMedium}"
 }
