@@ -1,1 +1,0 @@
-# Powershell settings for current user, but only for the Microsoft.Powershell shell

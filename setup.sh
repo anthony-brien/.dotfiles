@@ -32,4 +32,7 @@ SetupLink ~/.dotfiles/git/.gitignore ~/.gitignore
 # vim
 SetupLink ~/.dotfiles/vim/.vimrc ~/.vimrc
 
+# powershell
+SetupLink ~/.dotfiles/powershell/profile.ps1 ~/.config/powershell/profile.ps1
+
 source ./macos/set-defaults.sh
