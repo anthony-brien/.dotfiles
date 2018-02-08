@@ -25,7 +25,8 @@
         "*.sharpmake": "csharp",
         "*.editorconfig": "ini",
         ".p4ignore": "shellscript",
-        "*.vssettings": "xml"
+        "*.vssettings": "xml",
+        "*.json": "jsonc"
     },
     "editor.fontFamily": "'Fira Code', 'iA Writer Duospace', Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
