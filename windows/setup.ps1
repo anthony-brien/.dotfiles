@@ -26,7 +26,12 @@ if (!(Verify-Elevated)) {
  Write-Host "Installing PowerShell Modules..." -ForegroundColor "Yellow"
  Install-Module Posh-Git -Scope CurrentUser -Force
  Install-Module oh-my-posh -Scope CurrentUser -Force
+ Install-Module posh-p4 -Scope CurrentUser -Force
  Install-Module PSWindowsUpdate -Scope CurrentUser -Force
+ Install-Module Jump.Location -Scope CurrentUser -Force
+ Install-Module Get-ChildItemColor -Scope CurrentUser -Force
+ Install-Module PSColor -Scope CurrentUser -Force
+
  
  
  ### Chocolatey

@@ -3,6 +3,8 @@ Import-Module posh-git
 Import-Module oh-my-posh
 Set-Theme paradox
 
+Import-Module PSColor
+# Import-Module posh-p4 -- Conflicts with TabExpansion from posh-git
 # VSCode auto loads powershell, which wipes the jumpstat, so don't autoload for now
 # Import-Module Jump.Location 
 
