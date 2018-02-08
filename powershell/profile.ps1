@@ -9,7 +9,7 @@ Set-Theme paradox
 
 # Start SshAgent if not already
 # Need this if you are using github as your remote git repository
-if (! (ps | ? { $_.Name -eq 'ssh-agent'})) {
+if (! (ps | Where-Object { $_.Name -eq 'ssh-agent'})) {
     Start-SshAgent
 }
 
@@ -17,7 +17,7 @@ if (! (ps | ? { $_.Name -eq 'ssh-agent'})) {
 function mklink ($target, $link)
 {
     New-Item -Path $link -ItemType SymbolicLink -Value $target
-}
+} 
 
 Import-Module Get-ChildItemColor # for ls wide format
  

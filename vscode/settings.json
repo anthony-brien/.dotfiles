@@ -30,7 +30,6 @@
     "editor.fontFamily": "'Fira Code', 'iA Writer Duospace', Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
     "editor.fontLigatures": true,
-    "workbench.iconTheme": "vscode-icons",
 
     "perforce.addOnFileCreate": false,
     "perforce.deleteOnFileDelete": false,
@@ -62,7 +61,6 @@
     "sync.quietSync": false,
     "sync.askGistName": false,
     "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.enabled": false,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -77,5 +75,8 @@
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
 
-    "window.title" : "${dirty}${rootName} - ${activeEditorMedium}"
+    "window.title": "${dirty}${rootName} - ${activeEditorMedium}",
+    "workbench.colorTheme": "Solarized Dark",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.gitExplorer.files.layout": "auto"
 }
