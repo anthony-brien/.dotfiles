@@ -76,7 +76,14 @@
     "git.enableSmartCommit": true,
 
     "window.title": "${dirty}${rootName} - ${activeEditorMedium}",
-    "workbench.colorTheme": "Solarized Dark",
+    "gitlens.gitExplorer.files.layout": "auto",
+    "gitlens.codeLens.scopes": [
+        "containers",
+        "blocks"
+    ],
     "gitlens.codeLens.enabled": false,
-    "gitlens.gitExplorer.files.layout": "auto"
+    "keyboard.touchbar.enabled": true,
+    "editor.minimap.side": "right",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "git.promptToSaveFilesBeforeCommit" : true
 }
