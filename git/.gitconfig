@@ -1,6 +1,6 @@
 [user]
-	email = anthony.brien@ubisoft.com
-	name = Anthony Brien
+    email = anthony.brien@ubisoft.com
+    name = Anthony Brien
 [color]
   ui = auto
 # [color "branch"]
@@ -12,73 +12,89 @@
     changed = green
     untracked = red
 [core]
-	editor = code --wait
-	excludesfile = ~/.gitignore
-	# prevent warning about CRLF conversion when using zsh
-	safecrlf = false 
-	autocrlf = true
+    editor = code --wait
+    excludesfile = ~/.gitignore
+    # prevent warning about CRLF conversion when using zsh
+    safecrlf = false 
+    autocrlf = true
+[pull]
+	rebase = true
+[rebase]
+	autosquash = true
 [diff]
     tool = vscode
-	guitool = p4merge
+    guitool = p4merge
 [difftool "vscode"]
     cmd = code --wait --diff $LOCAL $REMOTE
 [alias]
-	lga = log --graph --oneline --all --decorate
-	lg = log --graph  --pretty='format:%C(yellow)%h%Cred%d%Creset %s %C(green)%an%C(bold blue), %cr' --date=short --abbrev-commit
-	# View a pretty git log with branch tree
-    #g = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	who = shortlog -s --
-	# Show all of my configured aliases
-    aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
-	# Show all branches
+    # stage all
+    a = add -A
+    abort = rebase --abort
+    # Detect moved or copied lines, and ignore whitespace
+    blame = blame -w -M -C
+    # Show all branches
     br = branch -av
-	# Which files are receiving the most "love"
+
+    lga = log --graph --oneline --all --decorate
+    lg = log --graph  --pretty='format:%C(yellow)%h%Cred%d%Creset %s %C(green)%an%C(bold blue), %cr' --date=short --abbrev-commit
+    # View a pretty git log with branch tree
+    #g = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    who = shortlog -s --
+    # show log history timeline of commits with their files
+    fh = !git log --format=format:'%C(bold cyan)%ar %C(reset) %C(green)%f' --name-status
+	
+    # Show all of my configured aliases
+    aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
+    
+    # Which files are receiving the most "love"
     churn = !git log --all -M -C --name-only --format='format:' "$@" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print "count,file"} {print $1 "," $2}'
     # View the log and diff for a commit (previous if no SHA1 provided)
     details = log -n1 -p --format=fuller
-	# Return the repository's root directory (usefull for shell prompts)
+    # Return the repository's root directory (usefull for shell prompts)
     root = rev-parse --show-toplevel
-	co = checkout
-	ci = commit
-	st = status
-	unstage = reset --soft HEAD --
+    co = checkout
+    ci = commit
+    st = status
+    unstage = reset --soft HEAD --
+    stats = diff --stat
+    wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 
 [credential]
-	helper = wincred
+    helper = wincred
 
 [advice]
 #	statusHints = false
 
 [merge]
-	tool = vscode
-	stat = true
-	guitool = p4merge
+    tool = vscode
+    stat = true
+    guitool = p4merge
 [mergetool "vscode"]
-	cmd = "code --wait $MERGED"
+    cmd = "code --wait $MERGED"
 
 [url "https://github.com/"]
     insteadOf = gh:
 [url "https://gist.github.com/"]
     insteadOf = gist:
 [url "https://ubisoft.gitlab.com/"]
-	insteadOf = gl:
+    insteadOf = gl:
 [http]
-	proxy = http://proxy-mtl.ubisoft.org:3128
-	sslVerify = true
+    proxy = http://proxy-mtl.ubisoft.org:3128
+    sslVerify = true
 [https]
-	proxy = http://proxy-mtl.ubisoft.org:3128
+    proxy = http://proxy-mtl.ubisoft.org:3128
 [url "https://"]
-	insteadOf = git://
+    insteadOf = git://
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 [mergetool]
-	keepbackup = false
+    keepbackup = false
 [difftool "p4merge"]
-	path = C:/Program Files/Perforce/p4merge.exe
+    path = C:/Program Files/Perforce/p4merge.exe
 [mergetool "p4merge"]
-	path = C:/Program Files/Perforce/p4merge.exe
+    path = C:/Program Files/Perforce/p4merge.exe
 [difftool "araxis"]
-	path = C:/Program Files/Araxis/Araxis Merge/Compare.exe
+    path = C:/Program Files/Araxis/Araxis Merge/Compare.exe
 [mergetool "araxis"]
-	path = C:/Program Files/Araxis/Araxis Merge/Compare.exe
+    path = C:/Program Files/Araxis/Araxis Merge/Compare.exe
 

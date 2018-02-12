@@ -47,7 +47,6 @@
     "terminal.integrated.fontSize": 12,
     "workbench.sideBar.location": "left",
     "workbench.statusBar.feedback.visible": false,
-    "vsicons.projectDetection.disableDetect": true,
     "workbench.startupEditor": "newUntitledFile",
     "sync.gist": "c321c6f1755e80a0fcd0aa6e8acba784",
     "sync.lastUpload": "2017-12-15T18:10:03.647Z",
