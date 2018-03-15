@@ -76,7 +76,7 @@
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
 
-    "window.title": "${dirty}${rootName} - ${activeEditorMedium}",
+    "window.title": "${dirty}${folderPath} - ${activeEditorMedium}",
     "gitlens.gitExplorer.files.layout": "auto",
     "gitlens.codeLens.scopes": [
         "containers",
@@ -86,5 +86,6 @@
     "keyboard.touchbar.enabled": true,
     "editor.minimap.side": "right",
     "diffEditor.ignoreTrimWhitespace": true,
-    "git.promptToSaveFilesBeforeCommit" : true
+    "git.promptToSaveFilesBeforeCommit": true,
+    "gitlens.keymap": "alternate"
 }
