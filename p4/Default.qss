@@ -2,6 +2,13 @@ LightweightTextView
 {
     background-color: #333333;
 	color: #d1d3d6;
+
+    selection-background-color: #d1d3d6;
+    selection-color: #2b2a2a;
+}
+
+QAbstractScrollArea{
+    color: #7a7c7f;
 }
 
 /*
@@ -41,7 +48,6 @@ TFilterView::item:selected:hover {
     background-color: #444444;
 }
 
-
 UIPreferencesDialog QTreeWidget::branch:selected {
     background-color: #444444;
 }
@@ -58,21 +64,24 @@ UIPreferencesDialog QTreeWidget::item:selected:hover {
     background-color: #555555;
 }
 
-
 QTreeView::branch:selected {
-    background-color: #0088CC;
+    background-color: #212323;
+	color: #BEBEBE;
 }
 
 QTreeView::branch:selected:hover {
-    background-color: #0085C7;
+    background-color: #444444;
+    color: #BEBEBE;
 }
 
 QTreeView::item:selected {
-    background-color: #0088CC;
+    background-color: #212323;
+	color: #BEBEBE;
 }
 
 QTreeView::item:selected:hover {
-    background-color: #0085C7;
+    background-color: #444444;
+    color: #BEBEBE;
 }
 
 QTableWidget {
@@ -81,7 +90,6 @@ QTableWidget {
 
 QTableWidget::item {
 	background-color: #333333;
-	
 }
 
 QTableWidget::item:selected {
@@ -103,38 +111,47 @@ ConnectionPane:item:selected:hover {
 QAbstractItemView {
     background-color: #333333;
     color: #d1d3d6;
+    selection-background-color: transparent;
 }
 
+/* 1 */
 QAbstractItemView[hasFocus="false"]::item:selected {
-    background-color: #2b2a2a;
+    background-color: #828282;
+    color: #2b2a2a;
 }
 
 QAbstractItemView[hasFocus="false"]::item:selected:hover {
-    background-color: #555555;
+    background-color: #BEBEBE;
 }
 
 QAbstractItemView[hasFocus="true"]::item:selected {
-    background-color: #3d3d3d;
+    background-color: #d1d3d6;
+    color: #2b2a2a;
 }
 
 QAbstractItemView[hasFocus="true"]::item:selected:hover {
-    background-color: #555555;
+    background-color: #F0F0F0;
+    color: #2b2a2a;
 }
 
+/* 2 */
 QAbstractItemView[hasFocus="false"]::branch:selected {
-    background-color: #2b2a2a;
+    background-color: #828282;
+    color: #2b2a2a;
 }
 
 QAbstractItemView[hasFocus="false"]::branch:selected:hover {
-    background-color: #555555;
+    background-color: #BEBEBE;
 }
 
 QAbstractItemView[hasFocus="true"]::branch:selected {
-    background-color: #3d3d3d;
+    background-color: #d1d3d6;
+    color: #2b2a2a;
 }
 
 QAbstractItemView[hasFocus="true"]::branch:selected:hover {
-    background-color: #555555;
+    background-color: #F0F0F0;
+    color: #2b2a2a;
 }
 
 QAbstractItemView::item:hover {
@@ -159,12 +176,12 @@ QAbstractItemView::branch:open:has-children:has-siblings  {
 
 
 QCheckBox {
-    color: #aaaaaa;
+    color: #F0F0F0;
 }
 
 QComboBox
 {
-    selection-background-color: #5091bc;
+    selection-background-color: #555555;
     background-color: #333333;
 	border: 1px solid #3d3c3c;
 }
@@ -211,7 +228,7 @@ QLineEdit:disabled{
 }
 
 MostRecentCombo {
-    color: #000000;
+    color: #F0F0F0;
 }
 
 QComboBox {
@@ -493,6 +510,9 @@ QTextEdit[readOnly="true"]
     padding: 0px;
     background-color: #333333;
     border: 1px solid #3d3c3c;
+
+    selection-background-color: #d1d3d6;
+    selection-color: #2b2a2a;
 }
 
 QTextEdit[readOnly="false"]
@@ -500,6 +520,9 @@ QTextEdit[readOnly="false"]
     color: #d2d3d6;
     background-color: #333333;
 	border: 1px solid #3d3c3c;
+
+    selection-background-color: #d1d3d6;
+    selection-color: #2b2a2a;
 }
 
 QDialog {
@@ -591,7 +614,6 @@ QFrame {
 	border: 0;
 }
 
-
 UIWorkspaceWidget {
     background-color: #333333;
 }
@@ -606,9 +628,9 @@ QToolBar#P4VToolBar QToolButton:disabled {
 }
 
 QToolTip {
-    border: 1px solid #e5d36c;
-    background-color: #fdfdc9;
-    color: #000000;
+    border: 1px solid #333333;
+    background-color: #6A6868;
+    color: #f0f0f0;
     border-radius: 0px;
     opacity: 250;
     font-size: 11px;
@@ -638,6 +660,9 @@ RevDetails QLabel {
     color: #d2d3d6;
 }
 
+RevDetails QFrame{
+
+}
 
 Gui--DirectoryTreeView {
     background-color: #333333;
@@ -708,3 +733,8 @@ UISpecWindow QLabel {
 QLabel {
     color: #aaaaaa;
 }
+
+QRadioButton{
+    color: #d1d3d6;
+}
+
