@@ -69,6 +69,8 @@
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
@@ -87,5 +89,6 @@
     "editor.minimap.side": "right",
     "diffEditor.ignoreTrimWhitespace": true,
     "git.promptToSaveFilesBeforeCommit": true,
-    "gitlens.keymap": "alternate"
+    "gitlens.keymap": "chorded",
+    "editor.renderControlCharacters": true
 }

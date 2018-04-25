@@ -1,6 +1,11 @@
 # Powershell for current user and for all shells
 Import-Module posh-git
 Import-Module oh-my-posh
+
+# Custom powershell modules
+Import-Module C:\Users\abrien\powershell-scripts\Start-Coding -DisableNameChecking
+Import-Module C:\Users\abrien\powershell-scripts\Merge-P4 -DisableNameChecking
+
 Set-Theme paradox
 
 Import-Module PSColor
