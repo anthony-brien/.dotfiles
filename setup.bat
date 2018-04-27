@@ -27,24 +27,24 @@ del %HOME%\AppData\Roaming\Code\User\settings.json
 mklink %HOME%\AppData\Roaming\Code\User\settings.json %HOME%\.dotfiles\vscode\settings.json
 
 :: cmder
-del %HOME%\Apps\Cmder\config\cmder.lua
-mklink %HOME%\Apps\Cmder\config\cmder.lua %HOME%\.dotfiles\cmder\config\cmder.lua
-del %HOME%\Apps\Cmder\config\ConEmu.xml
-mklink %HOME%\Apps\Cmder\config\ConEmu.xml %HOME%\.dotfiles\cmder\config\ConEmu.xml
-del %HOME%\Apps\Cmder\config\powerline_prompt.lua
-mklink %HOME%\Apps\Cmder\config\powerline_prompt.lua %HOME%\.dotfiles\cmder\config\powerline_prompt.lua
-del %HOME%\Apps\Cmder\config\settings
-mklink %HOME%\Apps\Cmder\config\settings %HOME%\.dotfiles\cmder\config\settings
-del %HOME%\Apps\Cmder\config\user-aliases.cmd
-mklink %HOME%\Apps\Cmder\config\user-aliases.cmd %HOME%\.dotfiles\cmder\config\user-aliases.cmd
-del %HOME%\Apps\Cmder\config\user-ConEmu.xml
-mklink %HOME%\Apps\Cmder\config\user-ConEmu.xml %HOME%\.dotfiles\cmder\config\user-ConEmu.xml
-del %HOME%\Apps\Cmder\config\user-profile.cmd
-mklink %HOME%\Apps\Cmder\config\user-profile.cmd %HOME%\.dotfiles\cmder\config\user-profile.cmd
-del %HOME%\Apps\Cmder\config\user-startup.cmd
-mklink %HOME%\Apps\Cmder\config\user-startup.cmd %HOME%\.dotfiles\cmder\config\user-startup.cmd
-del %HOME%\Apps\Cmder\vscode.bat
-mklink %HOME%\Apps\Cmder\vscode.bat %HOME%\.dotfiles\cmder\vscode.bat
+del C:\tools\cmder\config\cmder.lua
+mklink C:\tools\cmder\config\cmder.lua %HOME%\.dotfiles\cmder\config\cmder.lua
+del C:\tools\cmder\config\ConEmu.xml
+mklink C:\tools\cmder\config\ConEmu.xml %HOME%\.dotfiles\cmder\config\ConEmu.xml
+del C:\tools\cmder\config\powerline_prompt.lua
+mklink C:\tools\cmder\config\powerline_prompt.lua %HOME%\.dotfiles\cmder\config\powerline_prompt.lua
+del C:\tools\cmder\config\settings
+mklink C:\tools\cmder\config\settings %HOME%\.dotfiles\cmder\config\settings
+del C:\tools\cmder\config\user-aliases.cmd
+mklink C:\tools\cmder\config\user-aliases.cmd %HOME%\.dotfiles\cmder\config\user-aliases.cmd
+del C:\tools\cmder\config\user-ConEmu.xml
+mklink C:\tools\cmder\config\user-ConEmu.xml %HOME%\.dotfiles\cmder\config\user-ConEmu.xml
+del C:\tools\cmder\config\user-profile.cmd
+mklink C:\tools\cmder\config\user-profile.cmd %HOME%\.dotfiles\cmder\config\user-profile.cmd
+del C:\tools\cmder\config\user-startup.cmd
+mklink C:\tools\cmder\config\user-startup.cmd %HOME%\.dotfiles\cmder\config\user-startup.cmd
+del C:\tools\cmder\vscode.bat
+mklink C:\tools\cmder\vscode.bat %HOME%\.dotfiles\cmder\vscode.bat
 
 :: hyper terminal
 del %HOME%\.hyper.js
@@ -58,6 +58,6 @@ mklink %HOME%\p4aliases.txt %HOME%\.dotfiles\p4\p4aliases.txt
 
 ::powershell
 del %HOME%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-mklink %HOME%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 %HOME%\.dotfiles\powershell\Microsoft.PowerShell_profile.ps1
+mklink %HOME%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 %HOME%\.dotfiles\powershell\profile.ps1
 del %HOME%\Documents\WindowsPowerShell\profile.ps1
 mklink %HOME%\Documents\WindowsPowerShell\profile.ps1 %HOME%\.dotfiles\powershell\profile.ps1
