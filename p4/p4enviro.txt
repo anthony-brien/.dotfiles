@@ -2,4 +2,3 @@ P4COLORS=@info=0:@error=31;1:@warning=33;1:action=36:how:36:change=33:depotFile=
 P4IGNORE=.gitignore;.p4ignore
 P4EDITOR=C:\Program Files\Microsoft VS Code\Code.exe
 P4PORT=p4-code.ubisoft.org:1806
-P4CONFIG=p4config.txt

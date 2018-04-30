@@ -49,17 +49,7 @@
     "workbench.sideBar.location": "left",
     "workbench.statusBar.feedback.visible": false,
     "workbench.startupEditor": "newUntitledFile",
-    "sync.gist": "c321c6f1755e80a0fcd0aa6e8acba784",
-    "sync.lastUpload": "2017-12-15T18:10:03.647Z",
-    "sync.autoDownload": false,
-    "sync.autoUpload": false,
-    "sync.lastDownload": "",
-    "sync.forceDownload": false,
-    "sync.anonymousGist": false,
-    "sync.host": "",
-    "sync.pathPrefix": "",
-    "sync.quietSync": false,
-    "sync.askGistName": false,
+
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
@@ -73,21 +63,25 @@
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-
-    "window.title": "${dirty}${folderPath} - ${activeEditorMedium}",
     "gitlens.gitExplorer.files.layout": "auto",
     "gitlens.codeLens.scopes": [
         "containers",
         "blocks"
     ],
     "gitlens.codeLens.enabled": false,
-    "keyboard.touchbar.enabled": true,
+    "gitlens.keymap": "chorded",
+    "gitlens.blame.avatars": true,
+    "gitlens.statusBar.alignment": "left",
+
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.promptToSaveFilesBeforeCommit": true,
+
+    "window.title": "${dirty}${folderPath} - ${activeEditorMedium}",
     "editor.minimap.side": "right",
     "diffEditor.ignoreTrimWhitespace": true,
-    "git.promptToSaveFilesBeforeCommit": true,
-    "gitlens.keymap": "chorded",
-    "editor.renderControlCharacters": true
+    "editor.renderControlCharacters": true,
+
+    "keyboard.touchbar.enabled": true,
 }
