@@ -22,7 +22,7 @@
 [rebase]
 	autosquash = true
 [diff]
-    tool = vscode
+	tool = vscode
     guitool = p4merge
 [difftool "vscode"]
     cmd = code --wait --diff $LOCAL $REMOTE
@@ -79,10 +79,10 @@
 [url "https://ubisoft.gitlab.com/"]
     insteadOf = gl:
 [http]
-    proxy = http://proxy-mtl.ubisoft.org:3128
+    proxy = http://proxy:3128
     sslVerify = true
 [https]
-    proxy = http://proxy-mtl.ubisoft.org:3128
+    proxy = http://proxy:3128
 [url "https://"]
     insteadOf = git://
 [branch]
