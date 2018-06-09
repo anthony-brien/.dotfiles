@@ -45,7 +45,10 @@
 	
     # Show all of my configured aliases
     aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
+  
     
+    changelog = log --pretty=format:\" * %s\"
+
     # Which files are receiving the most "love"
     churn = !git log --all -M -C --name-only --format='format:' "$@" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print "count,file"} {print $1 "," $2}'
     # View the log and diff for a commit (previous if no SHA1 provided)
@@ -55,7 +58,9 @@
     co = checkout
     ci = commit
     st = status
-    unstage = reset --soft HEAD --
+    # Uncommits last commit and places it back in the staging
+    uncommit = reset --soft HEAD^
+    unstage = reset HEAD
     stats = diff --stat
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 
@@ -69,6 +74,7 @@
     tool = vscode
     stat = true
     guitool = p4merge
+    summary = true
 [mergetool "vscode"]
     cmd = "code --wait $MERGED"
 
