@@ -30,29 +30,33 @@
     # stage all
     a = add -A
     abort = rebase --abort
-    # Detect moved or copied lines, and ignore whitespace
-    blame = blame -w -M -C
-    # Show all branches
-    br = branch -av
-
-    lga = log --graph --oneline --all --decorate
-    lg = log --graph  --pretty='format:%C(yellow)%h%Cred%d%Creset %s %C(green)%an%C(bold blue), %cr' --date=short --abbrev-commit
-    # View a pretty git log with branch tree
-    #g = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-    who = shortlog -s --
-    # show log history timeline of commits with their files
-    fh = !git log --format=format:'%C(bold cyan)%ar %C(reset) %C(green)%f' --name-status
-	
     # Show all of my configured aliases
     aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort
   
     
     changelog = log --pretty=format:\" * %s\"
 
+    # Detect moved or copied lines, and ignore whitespace
+    blame = blame -w -M -C
     # Which files are receiving the most "love"
     churn = !git log --all -M -C --name-only --format='format:' "$@" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print "count,file"} {print $1 "," $2}'
+    ci = commit
+    co = checkout
+    # Show all branches
+    br = branch -av
     # View the log and diff for a commit (previous if no SHA1 provided)
     details = log -n1 -p --format=fuller
+    # show log history timeline of commits with their files
+    fh = !git log --format=format:'%C(bold cyan)%ar %C(reset) %C(green)%f' --name-status
+    # View a pretty git log with branch tree
+    #g = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lga = log --graph --oneline --all --decorate
+    lg = log --graph  --pretty='format:%C(yellow)%h%Cred%d%Creset %s %C(green)%an%C(bold blue), %cr' --date=short --abbrev-commit
+    markdownlog = log --color --pretty=format:'* %s `%Cred%h%Creset` - %C(bold blue)[%an](mailto:%ae)%Creset' --abbrev-commit --dense --no-merges --reverse
+	    # checkout a merge request to inspect it locally.
+    mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
+    st = status
+    stats = diff --stat
     # Return the repository's root directory (usefull for shell prompts)
     root = rev-parse --show-toplevel
     co = checkout
@@ -62,7 +66,10 @@
     uncommit = reset --soft HEAD^
     unstage = reset HEAD
     stats = diff --stat
+    unstage = reset --soft HEAD --
+    who = shortlog -s --
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+
 
 [credential]
     helper = wincred
@@ -105,4 +112,4 @@
     path = C:/Program Files/Araxis/Araxis Merge/Compare.exe
 
 [winUpdater]
-	recentlySeenVersion = 2.17.0.windows.1
+	recentlySeenVersion = 2.18.0.windows.1
