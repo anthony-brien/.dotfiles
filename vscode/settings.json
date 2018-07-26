@@ -4,7 +4,7 @@
     "editor.minimap.enabled": true,
     "editor.minimap.renderCharacters": true,
     "editor.cursorBlinking": "solid",
-    "editor.lineNumbers": "interval",
+    "editor.lineNumbers": "on",
     "files.hotExit": "onExitAndWindowClose",
     "csharp.suppressDotnetRestoreNotification": true,
 
@@ -37,8 +37,8 @@
         "extern": false,
         // To workaround lack of negation, ignore all folders not starting with letters that interest us
         "extern/[1234567890]*": true,
-        "extern/[bcdefghijklmnopqrstuvwxyz]*": true,
-        "extern/[BCDEFGHIJKLMNOPQRSTUVWXYZ]*": true,
+        "extern/[bcdefghijklmnopqrstvwxyz]*": true,
+        "extern/[BCDEFGHIJKLMNOPQRSTVWXYZ]*": true,
         "extern/Actipro WPF Studio": true,
         "extern/amd": true,
         "extern/antlr*": true,
@@ -54,9 +54,18 @@
         "**/tmp/editor": true,
         "**/obj": true,
         "**/temp": true,
-        "**/EPA": true,
-        "**/ExternalPackagesAddons": true,
-
+        "**/EPA/config": true,
+        "**/EPA/documentation": true,
+        "**/EPA/html": true,
+        "**/EPA/packages": true,
+        "**/EPA/tmp": true,
+        "**/EPA/projects": true,
+        "**/ExternalPackagesAddons/config": true,
+        "**/ExternalPackagesAddons/documentation": true,
+        "**/ExternalPackagesAddons/html": true,
+        "**/ExternalPackagesAddons/packages": true,
+        "**/ExternalPackagesAddons/tmp": true,
+        "**/ExternalPackagesAddons/projects": true,
     },
     "editor.fontFamily": "'Fira Code', 'iA Writer Duospace', Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
@@ -82,17 +91,12 @@
 
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": false,
+        "suppressResultsExplorerNotice": true,
         "suppressShowKeyBindingsNotice": true,
-        "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
+
+    //"gitlens.explorers.avatars": true,
     "gitlens.gitExplorer.files.layout": "auto",
     "gitlens.codeLens.scopes": [
         "containers",
@@ -114,4 +118,12 @@
     "editor.renderControlCharacters": true,
 
     "keyboard.touchbar.enabled": true,
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.advanced.blame.customArguments": [
+        "-M",
+        "-C",
+        "-C"
+    ],
+    "debug.toolBarLocation": "docked",
+    "explorer.confirmDelete": false
 }
