@@ -55,6 +55,8 @@ if (!(Verify-Elevated)) {
  choco install f.lux
  choco install gitkraken
  choco install cmder
+ choco install screenpresso
+ choco install todoist
  
  Refresh-Environment
  
