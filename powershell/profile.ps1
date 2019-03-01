@@ -6,12 +6,10 @@ Import-Module oh-my-posh
 Import-Module C:\Users\abrien\powershell-scripts\Start-Coding -DisableNameChecking
 Import-Module C:\Users\abrien\powershell-scripts\Merge-P4 -DisableNameChecking
 
-Set-Theme paradox
+Set-Theme PowerLine
 
 Import-Module PSColor
 # Import-Module posh-p4 -- Conflicts with TabExpansion from posh-git
-# VSCode auto loads powershell, which wipes the jumpstat, so don't autoload for now
-# Import-Module Jump.Location 
 
 
 # Start SshAgent if not already

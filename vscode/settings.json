@@ -79,9 +79,9 @@
     "perforce.countBadge": "all-but-shelved",
 
     "window.zoomLevel": 0,
+    "window.titleBarStyle": "custom",
     "extensions.ignoreRecommendations": false,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
-    "terminal.integrated.shellArgs.windows": ["/K", "C:\\Users\\abrien\\Apps\\Cmder\\vscode.bat"],
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontFamily": "'Fira Code', 'Consolas'",
     "terminal.integrated.fontSize": 14,
@@ -91,6 +91,7 @@
 
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.advanced.messages": {
+        "suppressGitDisabledWarning": true,
         "suppressResultsExplorerNotice": true,
         "suppressShowKeyBindingsNotice": true,
         "suppressWelcomeNotice": true
@@ -106,6 +107,15 @@
     "gitlens.keymap": "chorded",
     "gitlens.blame.avatars": true,
     "gitlens.statusBar.alignment": "left",
+    "gitlens.views.repositories.files.layout": "auto",
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.advanced.blame.customArguments": [
+        "-M",
+        "-C",
+        "-C"
+    ],
 
     "git.autofetch": true,
     "git.confirmSync": false,
@@ -118,12 +128,11 @@
     "editor.renderControlCharacters": true,
 
     "keyboard.touchbar.enabled": true,
-    "gitlens.historyExplorer.enabled": true,
-    "gitlens.advanced.blame.customArguments": [
-        "-M",
-        "-C",
-        "-C"
-    ],
     "debug.toolBarLocation": "docked",
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.symbolPath": "on",
+    
+    "gitlab.instanceUrl": "https://gitlab-ncsa.ubisoft.org",
+    "workbench.editor.highlightModifiedTabs": true,
 }
