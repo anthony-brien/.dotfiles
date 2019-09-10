@@ -8,7 +8,7 @@
     "files.hotExit": "onExitAndWindowClose",
     "csharp.suppressDotnetRestoreNotification": true,
 
-    "http.proxy": "http://proxy.mtl.ubisoft.com:3128",
+    "http.proxy": "http://proxy.ubisoft.org:3128",
 
     // "files.exclude":{
     //     "**/.git": true,
@@ -81,7 +81,7 @@
     "window.zoomLevel": 0,
     "window.titleBarStyle": "custom",
     "extensions.ignoreRecommendations": false,
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontFamily": "'Fira Code', 'Consolas'",
     "terminal.integrated.fontSize": 14,
@@ -135,4 +135,5 @@
     
     "gitlab.instanceUrl": "https://gitlab-ncsa.ubisoft.org",
     "workbench.editor.highlightModifiedTabs": true,
+    "git.inputValidationLength": 100000,
 }
