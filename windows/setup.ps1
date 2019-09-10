@@ -13,7 +13,6 @@ if (!(Verify-Elevated)) {
  Write-Host "Updating Help..." -ForegroundColor "Yellow"
  Update-Help -Force
  
- 
  ### Package Providers
  Write-Host "Installing Package Providers..." -ForegroundColor "Yellow"
  Get-PackageProvider NuGet -Force | Out-Null
@@ -32,8 +31,6 @@ if (!(Verify-Elevated)) {
  Install-Module Get-ChildItemColor -Scope CurrentUser -Force
  Install-Module PSColor -Scope CurrentUser -Force
 
- 
- 
  ### Chocolatey
  Write-Host "Installing Desktop Utilities..." -ForegroundColor "Yellow"
  if ((which cinst) -eq $null) {
@@ -44,8 +41,6 @@ if (!(Verify-Elevated)) {
  
  choco install GoogleChrome        --limit-output
  choco install P4V
- choco install mattermost-desktop
- choco install slack
  choco install VisualStudioCode
  choco install licecap
  choco install Snoop
@@ -54,9 +49,9 @@ if (!(Verify-Elevated)) {
  choco install windirstat
  choco install f.lux
  choco install gitkraken
- choco install cmder
  choco install screenpresso
  choco install todoist
+ # choco install 1password # fails
  
  Refresh-Environment
  
