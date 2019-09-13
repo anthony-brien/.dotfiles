@@ -1,0 +1,7 @@
+P4COLORS=@info=0:@error=31;1:@warning=33;1:action=36:how:36:change=33:depotFile=32:path=32:location=32:rev=31:depotRev=31
+P4IGNORE=.gitignore;.p4ignore
+P4EDITOR=C:\Program Files\Microsoft VS Code\Code.exe
+P4PORT=p4-code.ubisoft.org:1806
+P4CONFIG=.p4config
+P4_p4-assassin-code.mtl.ubisoft.org:1806_CHARSET=none
+P4_p4-ac-data-ncsa-edge01.ubisoft.org:3476_CHARSET=none
