@@ -8,6 +8,7 @@ if (!(Verify-Elevated)) {
     exit
  }
  
+ # https://square/docs/setup/setup-square
  
  ### Update Help for Modules
  Write-Host "Updating Help..." -ForegroundColor "Yellow"
@@ -47,10 +48,11 @@ if (!(Verify-Elevated)) {
  choco install procexp
  choco install dependencywalker
  choco install windirstat
- choco install f.lux
  choco install gitkraken
  choco install screenpresso
  choco install todoist
+ choco install quicklook
+ choco install python2
  # choco install 1password # fails
  
  Refresh-Environment
