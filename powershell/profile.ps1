@@ -24,11 +24,10 @@ function mklink ($target, $link)
     New-Item -Path $link -ItemType SymbolicLink -Value $target
 } 
 
-Import-Module Get-ChildItemColor # for ls wide format
- 
+
 # TODO -option AllScope prob needs to be renamed to -Force
-Set-Alias l Get-ChildItemColor -option AllScope
-Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
+# Set-Alias l Get-ChildItemColor -option AllScope
+# Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
 
 # Perforce aliases
 #TODO Set-Alias Get-LatestIntegratedChangelist "p4 changes -s submitted -m1"
@@ -38,3 +37,6 @@ If ($IsWindows)
 {
     . ~/powershell-scripts/p4-functions.ps1
 }
+
+# Add windows/cmds to PATH
+$env:PATH += ";C:/users/abrien/.dotfiles/windows/cmds"

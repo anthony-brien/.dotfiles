@@ -113,3 +113,6 @@
 
 [winUpdater]
 	recentlySeenVersion = 2.18.0.windows.1
+[ubisoft]
+	clonedirectory = E:\\git
+	folderstructure = flat
