@@ -27,7 +27,7 @@ function mklink ($target, $link)
 
 # TODO -option AllScope prob needs to be renamed to -Force
 # Set-Alias l Get-ChildItemColor -option AllScope
-# Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
+Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
 
 # Perforce aliases
 #TODO Set-Alias Get-LatestIntegratedChangelist "p4 changes -s submitted -m1"

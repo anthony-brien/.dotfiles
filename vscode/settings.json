@@ -82,6 +82,7 @@
     "window.titleBarStyle": "custom",
     "extensions.ignoreRecommendations": false,
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shellArgs.windows": [ "/nologo" ],
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontFamily": "'Fira Code', 'Consolas'",
     "terminal.integrated.fontSize": 14,
@@ -136,4 +137,9 @@
     "gitlab.instanceUrl": "https://gitlab-ncsa.ubisoft.org",
     "workbench.editor.highlightModifiedTabs": true,
     "git.inputValidationLength": 100000,
+    "perforce.hideEmptyChangelists": true,
+    "perforce.hideShelvedFiles": true,
+    "perforce.bottleneck.maxConcurrent": null,
+    "perforce.bottleneck.penalty": null,
+    "window.menuBarVisibility": "default",
 }

@@ -29,7 +29,7 @@ if (!(Verify-Elevated)) {
  # Install-Module posh-p4 -Scope CurrentUser -Force
  Install-Module PSWindowsUpdate -Scope CurrentUser -Force
  Install-Module Jump.Location -Scope CurrentUser -Force
- Install-Module Get-ChildItemColor -Scope CurrentUser -Force
+ Install-Module Get-ChildItemColor -Scope CurrentUser -Force -AllowClobber
  Install-Module PSColor -Scope CurrentUser -Force
 
  ### Chocolatey
