@@ -67,7 +67,7 @@
         "**/ExternalPackagesAddons/tmp": true,
         "**/ExternalPackagesAddons/projects": true,
     },
-    "editor.fontFamily": "'Fira Code', 'iA Writer Duospace', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
     "editor.fontLigatures": true,
 
@@ -84,7 +84,7 @@
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "terminal.integrated.shellArgs.windows": [ "/nologo" ],
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "terminal.integrated.fontFamily": "'Fira Code', 'Consolas'",
+    "terminal.integrated.fontFamily": "'JetBrains Mono', 'Fira Code', 'Consolas'",
     "terminal.integrated.fontSize": 14,
     "workbench.sideBar.location": "left",
     "workbench.statusBar.feedback.visible": false,
@@ -125,7 +125,7 @@
 
     "window.title": "${dirty}${folderPath} - ${activeEditorMedium}",
     "editor.minimap.side": "right",
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "editor.renderControlCharacters": true,
 
     "keyboard.touchbar.enabled": true,
@@ -142,4 +142,6 @@
     "perforce.bottleneck.maxConcurrent": null,
     "perforce.bottleneck.penalty": null,
     "window.menuBarVisibility": "default",
+    "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
+    "timeline.showView": true
 }
