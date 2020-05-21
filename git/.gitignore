@@ -2,3 +2,4 @@
 .vs/
 _ReSharper.Caches/
 *.nuget.cache
+.p4config
