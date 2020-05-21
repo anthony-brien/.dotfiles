@@ -3,8 +3,9 @@ Import-Module posh-git
 Import-Module oh-my-posh
 
 # Custom powershell modules
-Import-Module C:\Users\abrien\powershell-scripts\Start-Coding -DisableNameChecking
-Import-Module C:\Users\abrien\powershell-scripts\Merge-P4 -DisableNameChecking
+Import-Module E:\git\powershell-scripts\Merge-P4 -DisableNameChecking
+Import-Module E:\git\powershell-scripts\P4Helpers.ps1
+Import-Module E:\git\powershell-scripts\CmdHelpers.ps1
 
 Set-Theme PowerLine
 
