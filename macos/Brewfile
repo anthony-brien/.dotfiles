@@ -17,13 +17,8 @@ brew 'zsh-completions'
 
 # Casks
 cask_args appdir: '/Applications'
-cask 'alfred'
-cask 'dropbox'
 cask 'hyper'
-cask 'calibre'
 cask 'iterm2'
-cask 'sketch'
-cask 'slack'
 cask 'dr-unarchiver'
 cask 'transmission'
 cask 'visual-studio-code'

@@ -12,27 +12,27 @@ function SetupLink()
 }
 
 # Hyper terminal
-SetupLink ~/.dotfiles/hyperterminal/.hyper.js ~/.hyper.js 
+SetupLink ~/git/.dotfiles/hyperterminal/.hyper.js ~/.hyper.js 
 
 # Visual Studio Code
-SetupLink ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+SetupLink ~/git/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 # bash
-SetupLink ~/.dotfiles/bash/.bash_profile ~/.bash_profile
-SetupLink ~/.dotfiles/bash/.bashrc ~/.bashrc
-SetupLink ~/.dotfiles/bash/.powerline-shell.json ~/.powerline-shell.json
+SetupLink ~/git/.dotfiles/bash/.bash_profile ~/.bash_profile
+SetupLink ~/git/.dotfiles/bash/.bashrc ~/.bashrc
+SetupLink ~/git/.dotfiles/bash/.powerline-shell.json ~/.powerline-shell.json
 
 # zsh
-SetupLink ~/.dotfiles/zsh/.zshrc ~/.zshrc
+SetupLink ~/git/.dotfiles/zsh/.zshrc ~/.zshrc
 
 # Git
-SetupLink ~/.dotfiles/git/.gitconfig ~/.gitconfig
-SetupLink ~/.dotfiles/git/.gitignore ~/.gitignore
+SetupLink ~/git/.dotfiles/git/.gitconfig ~/.gitconfig
+SetupLink ~/git/.dotfiles/git/.gitignore ~/.gitignore
 
 # vim
-SetupLink ~/.dotfiles/vim/.vimrc ~/.vimrc
+SetupLink ~/git/.dotfiles/vim/.vimrc ~/.vimrc
 
 # powershell
-SetupLink ~/.dotfiles/powershell/profile.ps1 ~/.config/powershell/profile.ps1
+SetupLink ~/git/.dotfiles/powershell/profile.ps1 ~/.config/powershell/profile.ps1
 
 source ./macos/set-defaults.sh
