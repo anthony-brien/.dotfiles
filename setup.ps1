@@ -24,5 +24,6 @@ mklink ~\AppData\Roaming\Code\User\settings.json ~\.dotfiles\vscode\settings.jso
 mklink ~\p4aliases.txt ~\.dotfiles\p4\p4aliases.txt
 
 # powershell
+mklink ~\.dotfiles\powershell\profile.ps1 ~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 
 mklink ~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 ~\.dotfiles\powershell\profile.ps1
 mklink ~\Documents\WindowsPowerShell\profile.ps1 ~\.dotfiles\powershell\profile.ps1

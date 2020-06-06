@@ -53,6 +53,9 @@ if (!(Verify-Elevated)) {
  choco install todoist
  choco install quicklook
  choco install python2
+
+ choco install poshgit
+ choco install oh-my-posh
  # choco install 1password # fails
  
  Refresh-Environment

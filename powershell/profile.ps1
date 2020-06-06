@@ -33,11 +33,5 @@ Set-Alias ls Get-ChildItemColorFormatWide -option AllScope
 # Perforce aliases
 #TODO Set-Alias Get-LatestIntegratedChangelist "p4 changes -s submitted -m1"
 
-# Load perforce helper functions
-If ($IsWindows)
-{
-    . ~/powershell-scripts/p4-functions.ps1
-}
-
 # Add windows/cmds to PATH
 $env:PATH += ";C:/users/abrien/.dotfiles/windows/cmds"
