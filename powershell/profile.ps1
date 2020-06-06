@@ -9,7 +9,7 @@ if ($IsWindows) {
     Import-Module E:\git\powershell-scripts\CmdHelpers.ps1
 }
 
-Set-Theme PowerLine
+Set-Theme Agnoster
 
 Import-Module PSColor
 # Import-Module posh-p4 -- Conflicts with TabExpansion from posh-git
