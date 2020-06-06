@@ -81,7 +81,7 @@
     "window.zoomLevel": 0,
     "window.titleBarStyle": "custom",
     "extensions.ignoreRecommendations": false,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "terminal.integrated.shellArgs.windows": [ "/nologo" ],
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontFamily": "'JetBrains Mono', 'Fira Code', 'Consolas'",
@@ -142,6 +142,6 @@
     "perforce.bottleneck.maxConcurrent": null,
     "perforce.bottleneck.penalty": null,
     "window.menuBarVisibility": "default",
-    "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
+    "powershell.powerShellDefaultVersion": "PowerShell Core 7 (x64)",
     "timeline.showView": true
 }

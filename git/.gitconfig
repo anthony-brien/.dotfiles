@@ -116,3 +116,13 @@
 [ubisoft]
 	clonedirectory = E:\\git
 	folderstructure = flat
+[mergetool "araxismerge"]
+	cmd = \"C:\\Program Files\\Araxis\\Araxis Merge\\AraxisGitMerge.exe\" \"$PWD/$REMOTE\" \"$PWD/$BASE\" \"$PWD/$LOCAL\" \"$PWD/$MERGED\"
+[mergetool "winmerge"]
+	cmd = \"\" -e -u -dl \"Mine\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[mergetool "codecompare"]
+	cmd = \"\" -MF \"$LOCAL\" -TF \"$REMOTE\" -BF \"$BASE\" -RF \"$MERGED\"
+[mergetool "jetbrainsrider"]
+	path = C:\\Users\\abrien\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\201.7846.1\\bin\\rider64.exe
+[mergetool "visualstudio"]
+	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsDiffMerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
