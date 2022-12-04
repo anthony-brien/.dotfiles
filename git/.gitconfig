@@ -17,12 +17,13 @@
     # prevent warning about CRLF conversion when using zsh
     safecrlf = false 
     autocrlf = true
+	longpaths = true
 [pull]
 	rebase = true
 [rebase]
 	autosquash = true
 [diff]
-	tool = vscode
+	tool = rider
     guitool = p4merge
 [difftool "vscode"]
     cmd = code --wait --diff $LOCAL $REMOTE
@@ -78,7 +79,7 @@
 #	statusHints = false
 
 [merge]
-    tool = vscode
+	tool = rider
     stat = true
     guitool = p4merge
     summary = true
@@ -92,20 +93,22 @@
 [url "https://ubisoft.gitlab.com/"]
     insteadOf = gl:
 [http]
-    proxy = http://proxy:3128
+	proxy = http://proxy.ubisoft.org:3128
     sslVerify = true
+	sslBackend = schannel
 [https]
-    proxy = http://proxy:3128
+	proxy = http://proxy.ubisoft.org:3128
 [url "https://"]
     insteadOf = git://
 [branch]
     autosetuprebase = always
 [mergetool]
     keepbackup = false
+	prompt = true
 [difftool "p4merge"]
     path = C:/Program Files/Perforce/p4merge.exe
 [mergetool "p4merge"]
-    path = C:/Program Files/Perforce/p4merge.exe
+	path = C:/Program Files/Perforce/p4merge.exe
 [difftool "araxis"]
     path = C:/Program Files/Araxis/Araxis Merge/Compare.exe
 [mergetool "araxis"]
@@ -122,7 +125,20 @@
 	cmd = \"\" -e -u -dl \"Mine\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
 [mergetool "codecompare"]
 	cmd = \"\" -MF \"$LOCAL\" -TF \"$REMOTE\" -BF \"$BASE\" -RF \"$MERGED\"
-[mergetool "jetbrainsrider"]
-	path = C:\\Users\\abrien\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\201.7846.1\\bin\\rider64.exe
 [mergetool "visualstudio"]
 	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsDiffMerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+[mergetool "rider"]
+	path = C:\\Users\\abrien\\AppData\\Local\\JetBrains\\ToolBox\\apps\\Rider\\ch-0\\213.5455.4\\bin\\rider64.exe
+[difftool]
+	prompt = true
+[difftool "vsdiffmerge"]
+	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+	keepBackup = false
+[mergetool "vsdiffmerge"]
+	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	keepBackup = false
+	trustExitCode = true
+[safe]
+	directory = *
+[credential "https://gitlab-ncsa.ubisoft.org"]
+	provider = generic
