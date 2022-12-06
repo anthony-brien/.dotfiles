@@ -1,1 +1,1 @@
-C:/Users/abrien/OneDrive - Ubisoft/Documents/WindowsPowerShell/profile.ps1
+C:/Users/abrien/OneDrive - Ubisoft/Documents/PowerShell/Microsoft.Powershell_profile.ps1
