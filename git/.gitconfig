@@ -1,6 +1,7 @@
 [user]
     email = anthony.brien@ubisoft.com
     name = Anthony Brien
+    
 [color]
   ui = auto
 # [color "branch"]
@@ -11,22 +12,21 @@
     added = yellow
     changed = green
     untracked = red
+    
 [core]
-    editor = code --wait
+    editor = rider.cmd --wait
     excludesfile = ~/.gitignore
     # prevent warning about CRLF conversion when using zsh
     safecrlf = false 
     autocrlf = true
 	longpaths = true
+
 [pull]
 	rebase = true
 [rebase]
 	autosquash = true
-[diff]
-	tool = rider
-    guitool = p4merge
-[difftool "vscode"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+
+
 [alias]
     # stage all
     a = add -A
@@ -72,19 +72,10 @@
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 
 
-[credential]
-    helper = wincred
-
 [advice]
 #	statusHints = false
 
-[merge]
-	tool = rider
-    stat = true
-    guitool = p4merge
-    summary = true
-[mergetool "vscode"]
-    cmd = "code --wait $MERGED"
+
 
 [url "https://github.com/"]
     insteadOf = gh:
@@ -102,43 +93,47 @@
     insteadOf = git://
 [branch]
     autosetuprebase = always
-[mergetool]
-    keepbackup = false
-	prompt = true
-[difftool "p4merge"]
-    path = C:/Program Files/Perforce/p4merge.exe
-[mergetool "p4merge"]
-	path = C:/Program Files/Perforce/p4merge.exe
+
+
+[diff]
+    tool = rider
+[difftool]
+	prompt = false
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [difftool "araxis"]
     path = C:/Program Files/Araxis/Araxis Merge/Compare.exe
+[difftool "rider"]
+    cmd = rider.cmd diff $LOCAL $REMOTE
+
+[merge]
+    tool = rider
+    stat = true
+    guitool = p4merge
+    summary = true
+[mergetool]
+    keepbackup = false
+    prompt = true
+[mergetool "araxismerge"]
+    cmd = \"C:\\Program Files\\Araxis\\Araxis Merge\\AraxisGitMerge.exe\" \"$PWD/$REMOTE\" \"$PWD/$BASE\" \"$PWD/$LOCAL\" \"$PWD/$MERGED\"
 [mergetool "araxis"]
     path = C:/Program Files/Araxis/Araxis Merge/Compare.exe
+[mergetool "vscode"]
+    cmd = "code --wait $MERGED"
+[mergetool "vsdiffmerge"]
+	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	keepBackup = false
+	trustExitCode = true
+
+[safe]
+	directory = *
+[credential]
+    helper = wincred
+[credential "https://gitlab-ncsa.ubisoft.org"]
+	provider = generic
 
 [winUpdater]
 	recentlySeenVersion = 2.18.0.windows.1
 [ubisoft]
 	clonedirectory = E:\\git
 	folderstructure = flat
-[mergetool "araxismerge"]
-	cmd = \"C:\\Program Files\\Araxis\\Araxis Merge\\AraxisGitMerge.exe\" \"$PWD/$REMOTE\" \"$PWD/$BASE\" \"$PWD/$LOCAL\" \"$PWD/$MERGED\"
-[mergetool "winmerge"]
-	cmd = \"\" -e -u -dl \"Mine\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-[mergetool "codecompare"]
-	cmd = \"\" -MF \"$LOCAL\" -TF \"$REMOTE\" -BF \"$BASE\" -RF \"$MERGED\"
-[mergetool "visualstudio"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsDiffMerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
-[mergetool "rider"]
-	path = C:\\Users\\abrien\\AppData\\Local\\JetBrains\\ToolBox\\apps\\Rider\\ch-0\\213.5455.4\\bin\\rider64.exe
-[difftool]
-	prompt = true
-[difftool "vsdiffmerge"]
-	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
-	keepBackup = false
-[mergetool "vsdiffmerge"]
-	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
-	keepBackup = false
-	trustExitCode = true
-[safe]
-	directory = *
-[credential "https://gitlab-ncsa.ubisoft.org"]
-	provider = generic
